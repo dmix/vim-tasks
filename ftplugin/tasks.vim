@@ -142,8 +142,9 @@ function! TaskComplete()
       " swap out the marker, add the @done, find the projects and add @project
       let l:projects = GetProjects()
       call SetLineMarker(g:TasksMarkerDone)
-      call AddAttribute('done', strftime(s:dateFormat))
-      call AddAttribute('project', join(l:projects, ' / '))
+      call AddAttribute('done', '')
+      " call AddAttribute('project', join(l:projects, ' / '))
+      :w
     endif
   endif
 endfunc
@@ -189,7 +190,7 @@ function! TasksArchive()
     let l:doneMatch = match(l:line, s:regDone)
     let l:cancelledMatch = match(l:line, s:regCancelled)
     let l:projectMatch = matchstr(l:line, s:regProject)
-    
+
     if l:doneMatch > -1 || l:cancelledMatch > -1
       call add(l:completedTasks, [l:lineNr, Trim(l:line)])
     endif
