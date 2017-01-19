@@ -34,7 +34,7 @@ call s:initVariable('g:TasksMarkerDone', '✔')
 call s:initVariable('g:TasksMarkerCancelled', '✘')
 call s:initVariable('g:TasksDateFormat', '%Y-%m-%d %H:%M')
 call s:initVariable('g:TasksAttributeMarker', '@')
-call s:initVariable('g:TasksArchiveSeparator', '＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿')
+call s:initVariable('g:TasksArchiveSeparator', '＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n')
 
 let b:regesc = '[]()?.*@='
 
