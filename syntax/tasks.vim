@@ -57,8 +57,8 @@ hi def link tTaskCancelled Comment
 hi Title guifg=#4F5B66 gui=bold ctermfg=73
 hi Project   guifg=#99C794 ctermfg=73
 hi Headline1 guifg=#C594C5 gui=bold ctermfg=73
-hi Headline2 guifg=#6699CC gui=bold termfg=50
-hi Headline3 guifg=#A7ADBA gui=bold termfg=50
+hi Headline2 guifg=#6699CC gui=bold ctermfg=50
+hi Headline3 guifg=#A7ADBA gui=bold ctermfg=51
 
 hi def link tTitle Title
 hi def link tProject Project
