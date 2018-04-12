@@ -53,7 +53,7 @@ endfunction
 function! NewTask(direction)
   let l:line = getline('.')
   let l:isMatch = match(l:line, s:regProject)
-  let l:text = g:TasksMarkerBase . ' '
+  let l:text = '  ' . g:TasksMarkerBase . '  '
 
   if a:direction == -1
     exec 'normal O' . l:text
